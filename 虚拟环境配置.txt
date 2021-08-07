@@ -1,0 +1,15 @@
+1.安装虚拟环境virtualenv
+sudo -H pip3 install virtualenv
+
+2.创建虚拟环境
+virtualenv python-environment
+
+3.进入虚拟环境
+source python-environment/bin/activate
+
+4.在虚拟环境中安装相应的库
+pip3 install opencv-python
+pip install torch
+
+5.在虚拟环境中运行superpoint
+./demo_superpoint.py assets/nyu_snippet.mp4 --cuda
